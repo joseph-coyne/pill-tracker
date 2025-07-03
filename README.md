@@ -1,6 +1,6 @@
 # 🩺 Pill Tracker — Stream Deck Plugin
 
-Log and display whether you’ve taken your medication for the day — right from your Stream Deck.  
+Log and display whether you’ve taken your medication for the day, right from your Stream Deck.  
 This plugin helps you track daily meds at a glance, turning the button green when pressed and resetting it at midnight.
 
 ---
@@ -20,7 +20,7 @@ This plugin helps you track daily meds at a glance, turning the button green whe
 
 **Step 2. Clone the repo**
 ```bash
-git clone https://github.com/yourusername/pill-tracker
+git clone https://github.com/joseph-coyne/pill-tracker
 cd pill-tracker
 ```
 
