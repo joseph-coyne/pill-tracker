@@ -1,0 +1,52 @@
+{
+	"Name": "pill-tracker",
+	"Version": "0.1.0.0",
+	"Author": "tocks",
+	"Description": "Log and display if you've taken your pills for the day.",
+	"Category": "Health",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"Icon": "imgs/plugin/marketplace",
+	"CodePath": "bin/plugin.js",
+	"UUID": "com.tocks.pill-tracker",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.5"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+  "Actions": [
+    {
+      "Name": "Pill Tracker",
+      "UUID": "com.tocks.pill-tracker.pilltracker",
+      "Icon": "imgs/actions/track/red",
+      "Tooltip": "Tracks whether you've taken your pills for the day.",
+      "PropertyInspectorPath": "",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/actions/track/red",
+          "TitleAlignment": "middle"
+        },
+        {
+          "Image": "imgs/actions/track/green",
+          "TitleAlignment": "middle"
+        }
+      ]
+    }
+  ]
+
+}
