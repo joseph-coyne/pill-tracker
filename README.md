@@ -36,11 +36,11 @@ npm run build
 
 **Step 5. Symlink the built plugin folder**
 ```powershell
-Remove-Item "$env:APPDATA\Elgato\StreamDeck\Plugins\com.tocks.med-tracker.sdPlugin" -Recurse -Force
+Remove-Item "$env:APPDATA\Elgato\StreamDeck\Plugins\com.tocks.pill-tracker.sdPlugin" -Recurse -Force
 
 New-Item -ItemType SymbolicLink `
-    -Path "$env:APPDATA\Elgato\StreamDeck\Plugins\com.tocks.med-tracker.sdPlugin" `
-    -Target "$PWD\com.tocks.med-tracker.sdPlugin"
+    -Path "$env:APPDATA\Elgato\StreamDeck\Plugins\com.tocks.pill-tracker.sdPlugin" `
+    -Target "$PWD\com.tocks.pill-tracker.sdPlugin"
 ```
 
 **Step 6. Restart the Stream Deck app**
@@ -67,7 +67,7 @@ In the Stream Deck app, click the action’s gear icon to open its settings:
 │   ├── actions/
 │   │   └── pill-tracker.ts
 │   └── plugin.ts
-├── com.tocks.med-tracker.sdPlugin/
+├── com.tocks.pill-tracker.sdPlugin/
 │   ├── manifest.json
 │   ├── bin/plugin.js
 │   └── imgs/
